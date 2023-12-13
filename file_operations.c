@@ -84,10 +84,14 @@ void find_func(char *opcode, char *value, int line_num, int format)
 	int flag;
 
 	instruction_t func_list[] = {
-		{"push", add_to_stack},
+		{"push", push_in_stack},
 		{"pall", print_stack},
-		{"pint", print_top},
-		{"pop", pop_top},
+		{"pint", print_the_top},
+		{"pop", pop_the_top},
+		{"swap", swap_opcode},
+		{"add", add_opcode},
+		{"nop", nop_opcode},
+
 		{NULL, NULL}
 	};
 
@@ -141,7 +145,7 @@ void call_func(op_func func, char *op, char *value, int line_num, int format)
 		if (format == 0)
 			func(&node, line_num);
 		if (format == 1)
-			add_to_queue(&node, line_num);
+			push_in_queue(&node, line_num);
 	}
 	else
 		func(&head, line_num);

@@ -53,11 +53,14 @@ void call_func(op_func func, char *op, char *value, int line_num, int format);
 
 /*operations and node functions*/
 stack_t *create_node(int n);
-void add_to_queue(stack_t **new_node, unsigned int line_num);
-void add_to_stack(stack_t **new_node, unsigned int line_num);
+void push_in_queue(stack_t **new_node, unsigned int line_num);
+void push_in_stack(stack_t **new_node, unsigned int line_num);
 void print_stack(stack_t **stack, unsigned int line_num);
-void pop_top(stack_t **stack, unsigned int line_num);
-void print_top(stack_t **stack, unsigned int line_num);
+void pop_the_top(stack_t **stack, unsigned int line_num);
+void print_the_top(stack_t **stack, unsigned int line_num);
+void swap_opcode(stack_t **stack, unsigned int line_number);
+void add_opcode(stack_t **stack, unsigned int line_number);
+void nop_opcode(stack_t **stack, unsigned int line_number);
 void free_node(void);
 
 /*errors functions*/
