@@ -93,7 +93,8 @@ void find_func(char *opcode, char *value, int line_num, int format)
 		{"nop", nop_opcode},
 		{"sub", sub_opcode},
 		{"div", div_opcode},
-
+		{"mul", mul_opcode},
+		{"mod", mod_opcode},
 		{NULL, NULL}
 	};
 
