@@ -61,6 +61,7 @@ void print_the_top(stack_t **stack, unsigned int line_num);
 void swap_opcode(stack_t **stack, unsigned int line_number);
 void add_opcode(stack_t **stack, unsigned int line_number);
 void nop_opcode(stack_t **stack, unsigned int line_number);
+void sub_opcode(stack_t **stack, unsigned int line_number);
 void free_node(void);
 
 /*errors functions*/
