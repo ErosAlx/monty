@@ -95,6 +95,10 @@ void find_func(char *opcode, char *value, int line_num, int format)
 		{"div", div_opcode},
 		{"mul", mul_opcode},
 		{"mod", mod_opcode},
+		{"pchar", print_c},
+		{"pstr", print_str},
+		{"rotl", rotate_l},
+		{"rotr", rotate_r},
 		{NULL, NULL}
 	};
 

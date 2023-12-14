@@ -67,6 +67,12 @@ void mod_opcode(stack_t **stack, unsigned int line_number);
 void mul_opcode(stack_t **stack, unsigned int line_number);
 void free_node(void);
 
+/*string and rotation operations*/
+void print_c(stack_t **stack, unsigned int line_num);
+void print_str(stack_t **stack, unsigned int line_num);
+void rotate_l(stack_t **stack, unsigned int line_num);
+void rotate_r(stack_t **stack, unsigned int line_num);
+
 /*errors functions*/
 void error_func1(int err, ...);
 void error_func2(int err, ...);
