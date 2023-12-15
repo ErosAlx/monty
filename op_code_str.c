@@ -3,7 +3,7 @@
 /**
  * print_c - prints a char using ascii value
  * @stack: pointer to a pointer pointing to top node of the stack
- * @line_number: interger representing the line number of of the opcode
+ * @line_num: interger representing the line number of of the opcode
  */
 
 void print_c(stack_t **stack, unsigned int line_num)
